@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto Mounting Filesystems and Blockdevices
+
+[Service]
+ExecStart=/usr/local/bin/automounter
+Type=simple
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
